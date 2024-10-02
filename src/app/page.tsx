@@ -1,101 +1,122 @@
-import Image from "next/image";
+'use client'
+
+import About from "@/components/ui/About";
+import ContactForm from "@/components/ui/Contact";
+import Experience from "@/components/ui/Experience";
+import GoogleMap from "@/components/ui/GoogleMap";
+import LargeScreenHeader from "@/components/ui/LargeScreenHeader";
+import Navbar from "@/components/ui/Navbar";
+import Pricing from "@/components/ui/Pricing";
+import Projects from "@/components/ui/Projects";
+import Recipes from "@/components/ui/Recipes";
+import Testamonials from "@/components/ui/Testamonials";
+import { useGlobalState } from "@/context";
+import { useEffect, useState } from "react";
+
+
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isMounted, setIsMounted] = useState(false);  // Hydration state
+  const [isMobile, setIsMobile] = useState(false);  // Screen size state
+  const { role } = useGlobalState();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+
+    // Set mounted to true once client-side
+    setIsMounted(true);
+
+    // Check if window is defined (to prevent SSR errors)
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+
+      // Initial check
+      handleResize();
+
+      // Listen for resize events
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup event listener on component unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, [isMobile]);
+
+   // Return null if not mounted (during SSR), ensures component only renders on the client
+   if (!isMounted) return null;
+
+   //if (!isMobile) return null;
+
+  return (
+    <main className="relative bg-white dark:bg-gray-900">
+      < div className="h-full  flex flex-col w-full">
+        <div className="flex flex-col">
+          <Navbar />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <div className="mb-16">
+        <LargeScreenHeader />
+        </div>
+
+        <section
+          id="about"
+          className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mx-auto relative mb-16 pt-[100px] -mt-[70px]"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <About />
+        </section>
+
+        <section
+          id="experience"
+          className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Experience />
+        </section>
+
+
+        {role === "developer" && (
+          <section
+            id="projects"
+            className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]"
+          >
+          <Projects />
+          </section>
+        )}
+
+        {role === "trainer" && (
+        <section
+          id="recipes"
+          className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <Recipes />
+        </section>
+        )}
+
+        {role === "trainer" && (
+          <section
+            id="testamonials"
+            className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]"
+          >
+          <Testamonials />
+          </section>
+        )}
+
+        {role === "trainer" && (
+          <section id="pricing">
+          <div className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]">
+            <Pricing />
+          </div>
+          </section>
+          )}
+
+        <section
+          id="contact"
+          className="flex flex-col md:flex-row justify-center w-[90%] bg-white dark:bg-gray-900 my-8 mx-auto space-x-14 relative pt-[100px] -mt-[100px]"
+        >
+          <ContactForm /><GoogleMap />
+        </section>
+        <div className="h-96"></div>
+      </div>
+    </main>
   );
 }
