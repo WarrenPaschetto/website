@@ -3,7 +3,7 @@
 import Nutrition from "@/components/ui/Nutrition";
 import Image from "next/image";
 
-export default function goulashHome() {
+export default function chocolateProteinBallsHome() {
 
   return (
     <main className="relative bg-white dark:bg-gray-900">
