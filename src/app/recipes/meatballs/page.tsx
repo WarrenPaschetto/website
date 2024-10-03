@@ -1,6 +1,6 @@
 'use client'
 
-import Nutrition from "@/components/ui/Nutrition";
+import Nutrition from "@/components/layout/recipeSection/Nutrition";
 import Image from "next/image";
 
 export default function Home() {

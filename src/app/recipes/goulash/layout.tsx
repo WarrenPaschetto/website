@@ -1,5 +1,5 @@
 
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/nav/Navbar";
 
 function GoulashLayout({children} : {children: React.ReactNode }) {
   return (

@@ -1,4 +1,4 @@
-import Navbar from "@/components/ui/Navbar";
+import Navbar from "@/components/nav/Navbar";
 
 function MeatballLayout({children} : {children: React.ReactNode }) {
   return (
