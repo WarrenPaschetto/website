@@ -288,6 +288,13 @@ export const trainerEvents = [
       link: "/recipes/meatballs",
       },
       {
+      image: "/assets/recipeImages/soup.jpg",
+      title: "Homemade Chicken Soup",
+      description: "This delicious low calorie high protein soup is perfect for a cold day.",
+      macros: "Protein: 25g Carbs: 9g Fat: 12g Calories: 222",
+      link: "/recipes/chickenSoup",
+      },
+      {
         image: "/assets/recipeImages/proteinBalls.jpg",
         title: "Chocolate Coconut Protein Balls",
         description: "Delicious low carb chocolate cookies with healthy fats and 12g protein.",

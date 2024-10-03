@@ -9,7 +9,7 @@ import Navbar from "@/components/nav/Navbar";
 import Pricing from "@/components/layout/pricing/Pricing";
 import Projects from "@/components/layout/projectsSection/Projects";
 import Recipes from "@/components/layout/recipeSection/Recipes";
-import Testamonials from "@/components/layout/testamonialSection/Testamonials";
+import Testamonials from "@/components/layout/testimonialSection/Testimonials";
 import { useGlobalState } from "@/context";
 import { useEffect, useState } from "react";
 

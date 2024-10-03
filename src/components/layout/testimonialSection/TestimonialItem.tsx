@@ -1,12 +1,12 @@
 "use client"
 // Define prop types using an interface
-interface TestamonialProps {
+interface TestimonialProps {
     name: string;
     quote: string;
     isLast: boolean;
   }
 
-  const TestamonialItem: React.FC<TestamonialProps> = ({ name, quote}) => {
+  const TestimonialItem: React.FC<TestimonialProps> = ({ name, quote}) => {
 
     return (
       <div className="flex items-start w-[95%] md:max-w-[60%]">
@@ -21,4 +21,4 @@ interface TestamonialProps {
     );
   };
 
-  export default TestamonialItem;
+  export default TestimonialItem;
