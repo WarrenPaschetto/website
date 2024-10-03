@@ -32,7 +32,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ business, date, title, logo
       </div>
 
       {/* Event details */}
-      <div className='border-4 border-accent-light shadow-accent-light dark:border-accent-dark dark:shadow-accent-dark shadow-md p-6 rounded-lg max-w-[60%]'>
+      <div className='border-4 border-accent-light shadow-accent-light dark:border-accent-dark dark:shadow-accent-dark shadow-md p-6 rounded-lg max-w-[95%] lg:max-w-[60%]'>
       <div className="ml-8 text-left">
       <h2 className="text-xl font-bold text-accent dark:text-[#fb9039]">{title}</h2>
       <h4 className="text-lg font-semibold text-black dark:text-white">{business}</h4>

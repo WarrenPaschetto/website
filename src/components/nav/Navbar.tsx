@@ -1,10 +1,10 @@
 'use client';
 
-import { Button } from "./Button";
-import { ModeToggle } from "./ModeToggle";
+import { Button } from "../ui/Button";
+import { ModeToggle } from "../ui/ModeToggle";
 import React, { useState } from "react";
 import { useGlobalState } from "@/context";
-import Mode from "./Mode";
+import Mode from "../ui/Mode";
 import Link from 'next/link';
 import { Menu } from "lucide-react";
 

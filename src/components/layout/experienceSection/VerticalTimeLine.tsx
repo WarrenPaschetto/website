@@ -21,10 +21,10 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ events }) => {
   return (
     <div className="relative">
       {/* The timeline vertical line */}
-      <div className="absolute w-1 bg-accent-light dark:bg-accent-dark h-full left-0 top-0"></div>
+      <div className="absolute w-1 bg-accent-light dark:bg-accent-dark h-full md:left-0 mx=auto top-0"></div>
 
       {/* Render timeline items */}
-      <div className="space-y-10">
+      <div className="space-y-10 sm:w-full">
         {events.map((event, index) => (
           <TimelineItem
             key={index}

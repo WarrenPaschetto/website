@@ -15,7 +15,7 @@ export default function Experience() {
 
   return (
     <div className="flex justify-center w-full bg-gray-100 rounded-lg shadow-lg dark:shadow-gray-900 dark:bg-gray-900 my-8 mx-auto">
-    <div className="container text-center mx-auto my-10 max-w-[60%]">
+    <div className="container text-center mx-auto my-10 max-w-full md:max-w-[60%]">
       <Collapsible>
           <CollapsibleTrigger>
             <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8">{role === "trainer"? <div className="flex flex-row items-center">Trainer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/> </div>: <div className="flex flex-row items-center">Developer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/></div>}</h1>

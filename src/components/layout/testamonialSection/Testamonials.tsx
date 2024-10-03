@@ -7,7 +7,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/Collapsible";
 import Slider from "./Slider";
-import Carousel from "./Carousel";
+import Carousel from "../../ui/Carousel";
 
 export default function Testamonials() {
 

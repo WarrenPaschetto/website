@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
-import { Button } from "./Button"
-import { ModeToggle } from "./ModeToggle"
+import { Button } from "../ui/Button"
+import { ModeToggle } from "../ui/ModeToggle"
 
 export default function MobileMenu() {
 

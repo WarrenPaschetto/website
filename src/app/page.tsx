@@ -1,18 +1,17 @@
 'use client'
 
-import About from "@/components/ui/About";
-import ContactForm from "@/components/ui/Contact";
-import Experience from "@/components/ui/Experience";
-import GoogleMap from "@/components/ui/GoogleMap";
-import LargeScreenHeader from "@/components/ui/LargeScreenHeader";
-import Navbar from "@/components/ui/Navbar";
-import Pricing from "@/components/ui/Pricing";
-import Projects from "@/components/ui/Projects";
-import Recipes from "@/components/ui/Recipes";
-import Testamonials from "@/components/ui/Testamonials";
+import About from "@/components/layout/About";
+import ContactForm from "@/components/layout/Contact";
+import Experience from "@/components/layout/experienceSection/Experience";
+import GoogleMap from "@/components/layout/GoogleMap";
+import LargeScreenHeader from "@/components/layout/headers/LargeScreenHeader";
+import Navbar from "@/components/nav/Navbar";
+import Pricing from "@/components/layout/pricing/Pricing";
+import Projects from "@/components/layout/projectsSection/Projects";
+import Recipes from "@/components/layout/recipeSection/Recipes";
+import Testamonials from "@/components/layout/testamonialSection/Testamonials";
 import { useGlobalState } from "@/context";
 import { useEffect, useState } from "react";
-
 
 
 
