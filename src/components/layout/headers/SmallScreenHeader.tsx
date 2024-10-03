@@ -20,14 +20,14 @@ export default function SmallScreenHeader() {
 
       <div className="flex flex-row justify-center mt-3">
         <h1
-          className="text-neutral-900 dark:text-white text-center text-xl hover:text-[#FCA311] dark:hover:text-[#FCA311] font-bold cursor-pointer"
+          className="text-accent dark:text-white text-center text-xl hover:text-[#FCA311] dark:hover:text-[#FCA311] font-bold cursor-pointer border-2 p-2 rounded-full border-accent bg-blue-100"
           onClick={() => toggleRole('developer')}
         >
          Web Developer
         </h1>
         <h1 className="text-neutral-900 dark:text-white text-center text-xl font-bold">&nbsp;/&nbsp;</h1>
         <h1
-          className="text-neutral-900 dark:text-white text-center text-xl hover:text-[#FCA311] dark:hover:text-[#FCA311] font-bold cursor-pointer"
+          className="text-accent dark:text-white text-center text-xl hover:text-[#FCA311] dark:hover:text-[#FCA311] font-bold cursor-pointer border-2 p-2 rounded-full border-accent bg-blue-100"
           onClick={() => toggleRole('trainer')}
         >
            Personal Trainer
