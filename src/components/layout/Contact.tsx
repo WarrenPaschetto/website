@@ -44,8 +44,8 @@ const ContactForm = () => {
   };
 
   return (
-      <div className={role === "trainer"? "w-[60%] mx-auto p-8 bg-gray-100 rounded-lg shadow-lg" :
-        "w-[40%] mx-auto p-8 bg-gray-100 rounded-lg shadow-lg"}>
+      <div className={role === "trainer"? " w-full lg:w-[60%] mx-auto p-8 mb-5 bg-gray-100 rounded-lg shadow-lg" :
+        "w-full lg:w-[40%] mx-auto p-8 bg-gray-100 rounded-lg shadow-lg"}>
       <h2 className="text-3xl font-bold mb-6 text-center text-accent">Contact Me</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

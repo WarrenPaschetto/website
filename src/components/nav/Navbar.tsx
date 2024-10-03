@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 <li className="hover:text-[#FCA311]"><Link href="/#about" onClick={toggleMobileMenu}>About</Link></li>
                 <li className="hover:text-[#FCA311]"><Link href="/#experience" onClick={toggleMobileMenu}>Work Experience</Link></li>
                 <li className="hover:text-[#FCA311]"><Link href="/#recipes" onClick={toggleMobileMenu}>Recipes</Link></li>
-                <li className="hover:text-[#FCA311]"><Link href="/#testamonials" onClick={toggleMobileMenu}>Testamonials</Link></li>
+                <li className="hover:text-[#FCA311]"><Link href="/#testimonials" onClick={toggleMobileMenu}>Testimonials</Link></li>
                 <li className="hover:text-[#FCA311]"><Link href="/#pricing" onClick={toggleMobileMenu}>Pricing</Link></li>
                 <li className="hover:text-[#FCA311]"><Link href="/#contact" onClick={toggleMobileMenu}>Contact</Link></li>
                 <div className="p-2 z-[100] flex flex-row opacity-100 rounded-full border-2 bg-blue-100 dark:bg-gray-900 border-accent-light dark:border-gray-900">
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
                 <li className="hover:text-[#FCA311] "><Link href="/#about">About</Link></li>
                 <li className="hover:text-[#FCA311] "><Link href="/#experience">Work Experience</Link></li>
                 <li className="hover:text-[#FCA311] "><Link href="/#recipes">Recipes</Link></li>
-                <li className="hover:text-[#FCA311] "><Link href="/#testamonials">Testamonials</Link></li>
+                <li className="hover:text-[#FCA311] "><Link href="/#testimonials">Testimonials</Link></li>
                 <li className="hover:text-[#FCA311] "><Link href="/#pricing">Pricing</Link></li>
                 <li className="hover:text-[#FCA311] "><Link href="/#contact">Contact</Link></li>
               </ul>

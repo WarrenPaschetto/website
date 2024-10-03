@@ -19,7 +19,7 @@ export default function GoogleMap() {
             style={{ border: 1 }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-[70%] h-[70%] md:w-[500px] md:h-[500px]"
+            className="mx-auto w-[80%] h-[80%] md:w-[500px] md:h-[500px]"
           ></iframe>
           </div>
           :

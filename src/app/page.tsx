@@ -9,7 +9,7 @@ import Navbar from "@/components/nav/Navbar";
 import Pricing from "@/components/layout/pricing/Pricing";
 import Projects from "@/components/layout/projectsSection/Projects";
 import Recipes from "@/components/layout/recipeSection/Recipes";
-import Testamonials from "@/components/layout/testimonialSection/Testimonials";
+import Testimonials from "@/components/layout/testimonialSection/Testimonials";
 import { useGlobalState } from "@/context";
 import { useEffect, useState } from "react";
 
@@ -93,10 +93,10 @@ export default function Home() {
 
         {role === "trainer" && (
           <section
-            id="testamonials"
+            id="testimonials"
             className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mb-16 mx-auto relative pt-[100px] -mt-[70px]"
           >
-          <Testamonials />
+          <Testimonials />
           </section>
         )}
 
@@ -110,9 +110,10 @@ export default function Home() {
 
         <section
           id="contact"
-          className="flex flex-col md:flex-row justify-center w-[90%] bg-white dark:bg-gray-900 my-8 mx-auto space-x-14 relative pt-[100px] -mt-[100px]"
+          className="flex flex-col lg:flex-row w-[90%] bg-white dark:bg-gray-900 my-8 mx-auto lg:space-x-14 relative pt-[100px] -mt-[100px]"
         >
-          <ContactForm /><GoogleMap />
+          <ContactForm />
+          <GoogleMap />
         </section>
         <div className="h-96"></div>
       </div>
