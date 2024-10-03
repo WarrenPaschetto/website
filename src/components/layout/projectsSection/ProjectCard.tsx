@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface ProjectCardProps {
   github: string;
   image: string;
@@ -17,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ github, image, title, descrip
         {/* Front Side */}
         <div className="absolute w-full h-full [backface-visibility:hidden] p-8">
         <h1 className="text-accent font-bold text-center text-2xl m-5">{title}<br/></h1>
-          <img
+          <Image
             src={image}
             alt="Project Screenshot"
             width="500"
@@ -27,15 +29,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ github, image, title, descrip
           <p className="text-accent font-semibold text-left text-base text-wrap"><br/><br/><br/>Built using {tech}<br/></p>
           <div className="flex flex-row">
             {icons.map((icon, index) => (
-              <img
+              <Image
                 key={index}
                 src={icon}
                 alt="tech icon"
                 width="20"
                 height="20"
                 className="m-3 justify-start"
-                >
-                </img>
+                />
             ))}
             </div>
         </div>
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ github, image, title, descrip
             }}>{title}<br/></h1>
         {github !== "none" && (
               <button>
-                <img src="/assets/tech/github.png" alt="github icon" width="40" height="40"
+                <Image src="/assets/tech/github.png" alt="github icon" width="40" height="40"
                 className="flex justify-center rounded-full hover:bg-hover-light"
                 onClick={() => {window.open(github, '_blank');}}
               /></button>)}

@@ -253,6 +253,15 @@ export const trainerEvents = [
 
     export const ProjectExamples = [
       {
+      github: "https://github.com/WarrenPaschetto/website",
+      name: "Personal Website",
+      source: "/images/websiteScreenshot.png",
+      link: "https://warrenpaschetto.com",
+      description: "This is my personal website which is used by both my personal training clients and web developer clients.",
+      techNames: "Next.js, Typescript, and Tailwind CSS",
+      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
+      },
+      {
       github: "https://github.com/WarrenPaschetto/chat-with-pdf.git",
       name: "Chat with PDF",
       source: "/images/ChatPDF.png",

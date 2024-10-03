@@ -34,4 +34,3 @@ interface TestimonialProps {
   };
 
   export default TestimonialQuote;
-  
