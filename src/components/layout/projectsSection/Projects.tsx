@@ -36,8 +36,10 @@ const Projects: React.FC = () => {
         </CollapsibleTrigger>
         <CollapsibleContent>
       <div className="flex flex-col justify-center">
-        <div className="flex flex-row justify-center">
-          <p className="flex items-center text-lg font-bold text-accent dark:text-text-primary-dark">Click on backside title to view demo and&nbsp;<span><img src="/assets/tech/github.png" alt="github icon" width="20" height="20" className="rounded-full dark:bg-white"/></span>&nbsp;to view code.</p>
+      <div className="flex flex-col justify-center">
+          <p className="text-center text-lg font-bold text-accent dark:text-text-primary-dark">Click on backside title to view demo and</p>
+          <p className="flex justify-center items-center text-center text-lg font-bold text-accent dark:text-text-primary-dark">click&nbsp;<span><img src="/assets/tech/github.png" alt="github icon" width="20" height="20" className="rounded-full dark:bg-white"/></span>&nbsp;to view code.</p>
+          <p className="text-center text-xl font-bold text-hover-light dark:text-hover-dark md:hidden">Tap on the card to view the backside.</p>
         </div>
       <div className="relative flex flex-row justify-center rounded-lg ">
 

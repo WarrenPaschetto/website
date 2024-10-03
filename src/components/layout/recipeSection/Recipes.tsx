@@ -39,7 +39,7 @@ const Recipes: React.FC = () => {
       <div className="flex flex-col justify-center">
         <div className="w-full flex flex-row justify-center items-center">
           <a href="/files/RecipeBook.pdf" download>
-            <h3 className="text-xl font-bold text-accent dark:text-text-primary-dark mb-8 hover:text-hover-light dark:hover:text-hover-light">Click here to download my free recipe book</h3>
+            <h3 className="text-xl font-bold text-accent dark:text-text-primary-dark mb-8 hover:text-hover-light dark:hover:text-hover-light">Click&nbsp;<a className="text-hover-light dark:text-hover-dark">here</a>&nbsp;to download my free recipe book</h3>
           </a>
           <a href="/files/RecipeBook.pdf" download>
             <Image
@@ -52,8 +52,9 @@ const Recipes: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex flex-row justify-center">
-          <p className="flex items-center text-xl font-bold text-accent dark:text-text-primary-dark">Click on backside title to view recipe and complete nutritional information.</p>
+        <div className="flex flex-col justify-center">
+          <p className="text-center text-xl font-bold text-accent dark:text-text-primary-dark">Click on backside title to view recipe and complete nutritional information.</p>
+          <p className="text-center text-xl font-bold text-hover-light dark:text-hover-dark md:hidden">Tap on the card to view the backside.</p>
         </div>
       <div className="relative flex flex-row justify-center rounded-lg ">
 

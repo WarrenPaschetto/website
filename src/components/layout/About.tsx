@@ -16,7 +16,7 @@ export default function About() {
       <div className="container text-center mx-auto my-10 max-w-[60%]">
         <Collapsible>
           <CollapsibleTrigger>
-            <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8">{role === "trainer"? <div className="flex flex-row items-center">About Me as a Trainer&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/> </div>: <div className="flex flex-row items-center">About Me as aDeveloper&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/></div>}</h1>
+            <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8">{role === "trainer"? <div className="flex flex-row items-center">About Me as a Trainer&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/> </div>: <div className="flex flex-row items-center">About Me as a Developer&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/></div>}</h1>
           </CollapsibleTrigger>
         <CollapsibleContent>
           {role === "trainer"?
