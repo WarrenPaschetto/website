@@ -19,6 +19,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('GMAIL_USER:', process.env.GMAIL_USER);
+    console.log('GMAIL_PASS:', process.env.GMAIL_PASS);
+
 
     try {
       const response = await fetch('/api/contact', {
