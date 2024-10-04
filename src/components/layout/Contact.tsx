@@ -29,8 +29,6 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      //const result = await response.json();
-
       if (response.status === 200) {
         alert('Email sent successfully!');
         setFormData({ name: '', email: '', message: '' }); // Reset form after submission
