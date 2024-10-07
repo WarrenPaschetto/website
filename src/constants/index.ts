@@ -262,6 +262,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
       {
+      github: "https://github.com/WarrenPaschetto/simon",
+      name: "Simon Game",
+      source: "/images/simon.png",
+      link: "https://simon-gamma.vercel.app/",
+      description: "For fun I tried to recreate the 1980's memory game Simon.",
+      techNames: "Next.js, Typescript, and Tailwind CSS",
+      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
+      },
+      {
       github: "https://github.com/WarrenPaschetto/chat-with-pdf.git",
       name: "Chat with PDF",
       source: "/images/ChatPDF.png",
