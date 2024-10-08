@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       <div className="relative flex flex-row justify-center rounded-lg ">
 
         <button
-          onClick={nextSlide}
+          onClick={prevSlide}
           className="md:flex md:justify-center md:items-center w-1/5 hidden"
         >
           <SquareArrowLeft className="h-[5rem] w-[5rem] stroke-accent dark:stroke-text-primary-dark hover:stroke-hover-light dark:hover:stroke-hover-dark" />
@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
         </div>
 
         <button
-          onClick={prevSlide}
+          onClick={nextSlide}
           className="md:flex md:justify-center md:items-center w-1/5 hidden"
         >
           <SquareArrowRight className="h-[5rem] w-[5rem] stroke-accent dark:stroke-text-primary-dark hover:stroke-hover-light dark:hover:stroke-hover-dark" />
