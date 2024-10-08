@@ -266,7 +266,7 @@ export const trainerEvents = [
       name: "Simon Game",
       source: "/images/simon.png",
       link: "https://simon-gamma.vercel.app/",
-      description: "For fun I tried to recreate the 1980's memory game Simon.",
+      description: "For fun I tried to recreate the classic 1980's memory game Simon.",
       techNames: "Next.js, Typescript, and Tailwind CSS",
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
