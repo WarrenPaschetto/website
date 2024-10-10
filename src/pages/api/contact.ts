@@ -5,6 +5,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
+     // Basic server-side validation
+     if (!name || !email || !message) {
+      return res.status(400).json({ error: 'All fields are required' });
+     }
+
     // Create a transporter using Gmail's SMTP
     const transporter = nodemailer.createTransport({
       service: 'gmail',

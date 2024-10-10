@@ -20,6 +20,12 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+     // Client-side validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      alert('All fields are required.');
+      return;
+    }
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
