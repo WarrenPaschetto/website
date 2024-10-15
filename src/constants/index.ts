@@ -262,6 +262,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
       {
+      github: "https://github.com/WarrenPaschetto/wiseguy-siri.git",
+      name: "Wiseguy Siri",
+      source: "/images/wiseguy.png",
+      link: "https://warrenpaschetto.com/video-demos/wiseguy",
+      description: "This project gave me some initial experience working with Microsoft Azure and ElevenLabs. It is basically a Siri clone that gives sarcastic responses in my own voice.",
+      techNames: "Next.js, Typescript, Tailwind CSS, Microsoft Azure, OpenAI, and ElevenLabs",
+      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png", "/assets/tech/azure.png", "/assets/tech/openAI.png", "/assets/tech/elevenLabs.png"]
+      },
+      {
       github: "https://github.com/WarrenPaschetto/simon",
       name: "Simon Game",
       source: "/images/simon.png",
