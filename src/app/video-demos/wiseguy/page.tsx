@@ -25,10 +25,17 @@ const WiseguyVideo = () => {
           </p>
         </div>
         <div className="w-[90%] md:w-[70%] mx-auto m-10  p-4">
-          <video width="100%" controls playsInline preload="auto">
-            <source src="/videos/wiseguy.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/Dvllxk4jTs0"
+              title="Wiseguy App Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </main>
