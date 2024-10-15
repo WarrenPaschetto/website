@@ -25,7 +25,6 @@ const WiseguyVideo = () => {
           </p>
         </div>
         <div className="w-[90%] md:w-[70%] mx-auto m-10  p-4">
-          <div className="aspect-w-16 aspect-h-9">
             <iframe
               width="100%"
               height="100%"
@@ -35,7 +34,6 @@ const WiseguyVideo = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
         </div>
       </div>
     </main>
