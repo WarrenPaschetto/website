@@ -12,6 +12,7 @@ import Recipes from "@/components/layout/recipeSection/Recipes";
 import Testimonials from "@/components/layout/testimonialSection/Testimonials";
 import { useGlobalState } from "@/context";
 import { useEffect, useState } from "react";
+import { ChevronsUpDown } from "lucide-react";
 
 
 
@@ -57,6 +58,12 @@ export default function Home() {
         <div className="mb-16">
         <LargeScreenHeader />
         </div>
+
+        <section
+          className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mx-auto relative mb-16 pt-[100px] -mt-[70px]"
+        >
+        <h1 className="text-xl font-bold text-accent dark:text-text-primary-dark mb-8"><div className="flex flex-row items-center ">Click&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark w-6 h-6"/>&nbsp;to open/close sections below</div></h1>
+        </section>
 
         <section
           id="about"
