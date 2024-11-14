@@ -18,7 +18,7 @@ export default function Experience() {
     <div className="container text-center mx-auto my-10 max-w-full md:max-w-[60%]">
       <Collapsible>
           <CollapsibleTrigger>
-            <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8">{role === "trainer"? <div className="flex flex-row items-center">Trainer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/> </div>: <div className="flex flex-row items-center">Developer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/></div>}</h1>
+            <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8">{role === "trainer"? <div className="flex flex-row items-center hover:text-[#FCA311]">Trainer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark hover:stroke-[#FCA311] dark:hover:stroke-[#FCA311] w-10 h-10"/> </div>: <div className="flex flex-row items-center hover:text-[#FCA311]">Developer Experience&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark hover:stroke-[#FCA311] dark:hover:stroke-[#FCA311] w-10 h-10"/></div>}</h1>
           </CollapsibleTrigger>
           <CollapsibleContent>
           <VerticalTimeline events={role === "trainer"? trainerEvents : developerEvents} />

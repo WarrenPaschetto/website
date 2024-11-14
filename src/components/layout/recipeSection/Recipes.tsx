@@ -33,7 +33,7 @@ const Recipes: React.FC = () => {
     <div className="container text-center my-10 max-w-full">
       <Collapsible>
         <CollapsibleTrigger>
-          <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8"><div className="flex flex-row items-center">Recipes&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark"/></div></h1>
+          <h1 className="text-3xl font-bold text-accent dark:text-text-primary-dark mb-8"><div className="flex flex-row items-center hover:text-[#FCA311]">Recipes&nbsp;&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark hover:stroke-[#FCA311] dark:hover:stroke-[#FCA311] w-10 h-10"/></div></h1>
         </CollapsibleTrigger>
         <CollapsibleContent>
       <div className="flex flex-col justify-center">
