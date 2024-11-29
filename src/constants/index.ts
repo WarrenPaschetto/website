@@ -54,9 +54,7 @@ export const trainerEvents = [
       logo: "/images/WPFitLogo.png",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
@@ -204,7 +202,7 @@ export const trainerEvents = [
       },
       {
         name: "Alex R.",
-        quote: "He obviously knows what he’s doing. Does a great job explaining all the different except idea and pushes me hard to succeed. If you only want one session a week, he’ll make a DIY workout program for the rest of the week, and help you plan nutrition. Highly recommended if you’re trying to get in shape.",
+        quote: "He obviously knows what he’s doing. Does a great job explaining all the different excercises and pushes me hard to succeed. If you only want one session a week, he’ll make a DIY workout program for the rest of the week, and help you plan nutrition. Highly recommended if you’re trying to get in shape.",
       },
       {
         name: "Bridget H.",
@@ -285,7 +283,7 @@ export const trainerEvents = [
       source: "/images/ChatPDF.png",
       link: "https://chat-with-pdf-wdpaschetto-gmailcom-warren-paschettos-projects.vercel.app/",
       description: "This app allows users to upload a PDF document and then converse with an AI chatbot which will summarize content and answer all your questions. It stores PDF's in a database as well as previous questions and has both Free and Pro subscription levels.",
-      techNames: "Next.js, Google Firebase, OpenAI, Pincone, and Stripe",
+      techNames: "Next.js, Google Firebase, OpenAI, Pinecone, and Stripe",
       tech: ["/assets/tech/nextJs.png", "/assets/tech/firebase.png", "/assets/tech/pinecone.png", "/assets/tech/stripe.png"]
       },
       {
