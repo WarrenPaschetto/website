@@ -62,6 +62,11 @@ export default function Home() {
         <section
           className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mx-auto relative mb-16 pt-[100px] -mt-[70px]"
         >
+          <h1 className="text-xl font-bold text-accent dark:text-text-primary-dark mb-8 text-center">Click Personal Trainer button to only view personal trainer info or Web Developer button to only view developer info<br/></h1>
+        </section>
+        <section
+          className="flex justify-center w-[90%] bg-white dark:bg-gray-900 mx-auto relative mb-16 pt-[100px] -mt-[70px]"
+        >
         <h1 className="text-xl font-bold text-accent dark:text-text-primary-dark mb-8"><div className="flex flex-row items-center ">Click&nbsp;<ChevronsUpDown className="stroke-accent dark:stroke-text-primary-dark w-6 h-6"/>&nbsp;to open/close sections below</div></h1>
         </section>
 
