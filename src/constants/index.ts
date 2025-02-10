@@ -278,6 +278,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
       {
+      github: "https://github.com/WarrenPaschetto/maze-solver",
+      name: "Maze Builder and Solver",
+      source: "/images/maze.png",
+      link: "https://github.com/WarrenPaschetto/maze-solver",
+      description: "This Python project generates and solves a maze using recursion and depth-first search (DFS). The maze is displayed in a graphical window using Tkinter and can be visually solved by the program.",
+      techNames: "Python",
+      tech: ["/assets/tech/python.png"]   
+      },
+      {
       github: "https://github.com/WarrenPaschetto/chat-with-pdf.git",
       name: "Chat with PDF",
       source: "/images/ChatPDF.png",
