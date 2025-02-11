@@ -279,10 +279,19 @@ export const trainerEvents = [
       },
       {
       github: "https://github.com/WarrenPaschetto/maze-solver",
-      name: "Maze Builder and Solver",
+      name: "Maze Builder/Solver",
       source: "/images/maze.png",
       link: "https://github.com/WarrenPaschetto/maze-solver",
       description: "This Python project generates and solves a maze using recursion and depth-first search (DFS). The maze is displayed in a graphical window using Tkinter and can be visually solved by the program.",
+      techNames: "Python",
+      tech: ["/assets/tech/python.png"]   
+      },
+      {
+      github: "https://github.com/WarrenPaschetto/static-site-generator",
+      name: "Static Site Gen",
+      source: "/images/static-site-gen.png",
+      link: "https://github.com/WarrenPaschetto/static-site-generator",
+      description: "A lightweight static site generator that converts structured data into HTML pages. This project processes text, markdown-style content, and generates HTML with minimal dependencies.",
       techNames: "Python",
       tech: ["/assets/tech/python.png"]   
       },
