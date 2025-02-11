@@ -278,6 +278,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
       {
+      github: "https://github.com/WarrenPaschetto/asteroids",
+      name: "Asteroids Game",
+      source: "/images/asteroids-game.png",
+      link: "https://github.com/WarrenPaschetto/asteroids",
+      description: "A classic Asteroids game built using Python and Pygame.",
+      techNames: "Python",
+      tech: ["/assets/tech/python.png"]   
+      },
+      {
       github: "https://github.com/WarrenPaschetto/maze-solver",
       name: "Maze Builder/Solver",
       source: "/images/maze.png",
