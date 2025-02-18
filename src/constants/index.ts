@@ -305,6 +305,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/python.png"]   
       },
       {
+      github: "https://github.com/WarrenPaschetto/gitme",
+      name: "Gitme",
+      source: "/images/gitme.png",
+      link: "https://github.com/WarrenPaschetto/gitme",
+      description: "A CLI tool that automatically generates commit messages based on your staged Git changes using OpenAI’s GPT API.",
+      techNames: "Python, OpenAI",
+      tech: ["/assets/tech/python.png", "/assets/tech/openAI.png"]   
+      },
+      {
       github: "https://github.com/WarrenPaschetto/chat-with-pdf.git",
       name: "Chat with PDF",
       source: "/images/ChatPDF.png",
