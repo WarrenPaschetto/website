@@ -317,7 +317,7 @@ export const trainerEvents = [
       github: "https://github.com/WarrenPaschetto/chat-with-pdf.git",
       name: "Chat with PDF",
       source: "/images/ChatPDF.png",
-      link: "https://chat-with-pdf-wdpaschetto-gmailcom-warren-paschettos-projects.vercel.app/",
+      link: "https://chat-with-pdf-pearl.vercel.app/",
       description: "This app allows users to upload a PDF document and then converse with an AI chatbot which will summarize content and answer all your questions. It stores PDF's in a database as well as previous questions and has both Free and Pro subscription levels.",
       techNames: "Next.js, Google Firebase, OpenAI, Pinecone, and Stripe",
       tech: ["/assets/tech/nextJs.png", "/assets/tech/firebase.png", "/assets/tech/pinecone.png", "/assets/tech/stripe.png"]
