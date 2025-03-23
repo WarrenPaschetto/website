@@ -287,6 +287,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/python.png"]   
       },
       {
+      github: "https://github.com/WarrenPaschetto/pokedex",
+      name: "Pokedex CLI",
+      source: "/images/pokedexcli.png",
+      link: "https://github.com/WarrenPaschetto/pokedex",
+      description: "This is a terminal-based Pokémon explorer written in Go. This project familiarized me with HTTP requests, REPLs, caching, and more.",
+      techNames: "Go",
+      tech: ["/assets/tech/go.png"]   
+      },
+      {
       github: "https://github.com/WarrenPaschetto/maze-solver",
       name: "Maze Builder/Solver",
       source: "/images/maze.png",
