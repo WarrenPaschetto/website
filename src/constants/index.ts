@@ -264,7 +264,7 @@ export const trainerEvents = [
       name: "Gator - RSS Aggregator CLI",
       source: "/images/gatorSS.png",
       link: "https://github.com/WarrenPaschetto/gator",
-      description: "This project was built to learn how to build real-world command-line apps in Go using PostgreSQL, Goose (migrations), sqlc (safe SQL queries), XML + RSS parsing, and Ticker loops and middleware",
+      description: "This project was built to learn how to build real-world command-line apps in Go using PostgreSQL, Goose (migrations), sqlc (safe SQL queries), XML + RSS parsing, Ticker loops, and middleware",
       techNames: "GO, PostgreSQL, Goose",
       tech: ["/assets/tech/go.png", "/assets/tech/postgresql.png", "/assets/tech/goose.png"]
       },
