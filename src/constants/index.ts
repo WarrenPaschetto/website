@@ -260,6 +260,15 @@ export const trainerEvents = [
       tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png"]
       },
       {
+      github: "https://github.com/WarrenPaschetto/gator",
+      name: "Gator - RSS Aggregator CLI",
+      source: "/images/gatorSS.png",
+      link: "https://github.com/WarrenPaschetto/gator",
+      description: "This project was built to learn how to build real-world command-line apps in Go using PostgreSQL, Goose (migrations), sqlc (safe SQL queries), XML + RSS parsing, and Ticker loops and middleware",
+      techNames: "GO, PostgreSQL, Goose",
+      tech: ["/assets/tech/go.png", "/assets/tech/postgresql.png", "/assets/tech/goose.png"]
+      },
+      {
       github: "https://github.com/WarrenPaschetto/wiseguy-siri.git",
       name: "Wiseguy Siri",
       source: "/images/wiseguy.png",
@@ -292,7 +301,7 @@ export const trainerEvents = [
       source: "/images/pokedexcli.png",
       link: "https://github.com/WarrenPaschetto/pokedex",
       description: "This is a terminal-based Pokémon explorer written in Go. This project familiarized me with HTTP requests, REPLs, caching, and more.",
-      techNames: "Go",
+      techNames: "GO",
       tech: ["/assets/tech/go.png"]   
       },
       {
