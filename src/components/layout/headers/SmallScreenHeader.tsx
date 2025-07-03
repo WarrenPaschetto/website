@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function SmallScreenHeader() {
-  const { toggleRole } = useGlobalState();
+  const { role, toggleRole } = useGlobalState();
   const [imageSlider, setImageSlider] = useState(50);
   const [position, setPosition] = useState(0);
 
@@ -54,14 +54,22 @@ export default function SmallScreenHeader() {
       {/* Role Toggle */}
       <div className="flex flex-row justify-center mt-20 space-x-3 z-20">
         <h1
-          className="text-accent dark:text-[#F2E9E4] text-center text-lg font-bold cursor-pointer border-2 p-2 rounded-full border-accent bg-blue-100 dark:bg-secondary-dark dark:border-blue-100"
+          className={`text-center text-lg font-bold border-2 p-2 rounded-full border-accent dark:border-blue-100
+              ${role === 'developer'
+              ? 'bg-[#FCA311] text-white dark:text-white'
+              : 'bg-blue-100 text-accent dark:text-accent hover:bg-[#FCA311] dark:hover:bg-[#FCA311] dark:bg-secondary-dark'}
+              `}
           onClick={() => toggleRole('developer')}
           style={{ opacity: `${imageSlider / 100}` }}
         >
           Web Developer
         </h1>
         <h1
-          className="text-accent dark:text-[#F2E9E4] text-center text-lg font-bold cursor-pointer border-2 p-2 rounded-full border-accent bg-blue-100 dark:bg-secondary-dark dark:border-blue-100"
+          className={`text-center text-lg font-bold cursor-pointer border-2 p-2 rounded-full border-accent dark:border-blue-100
+              ${role === 'trainer'
+              ? 'bg-[#FCA311] text-white dark:text-white'
+              : 'bg-blue-100 text-accent dark:text-accent hover:bg-[#FCA311] dark:hover:bg-[#FCA311] dark:bg-secondary-dark'}
+              `}
           onClick={() => toggleRole('trainer')}
           style={{ opacity: `${1 - imageSlider / 100}` }}
         >
