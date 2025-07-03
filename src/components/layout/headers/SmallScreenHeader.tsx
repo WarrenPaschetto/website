@@ -11,7 +11,6 @@ export default function SmallScreenHeader() {
   const handleTouchMove = (e: React.TouchEvent) => {
     const touchX = e.touches[0].clientX;
     const xPercent = (touchX / window.innerWidth) * 100;
-    const xMotion = xPercent - 50;
     setImageSlider(xPercent);
   };
 
