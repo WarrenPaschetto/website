@@ -7,14 +7,12 @@ import { useState } from 'react';
 export default function SmallScreenHeader() {
   const { role, toggleRole } = useGlobalState();
   const [imageSlider, setImageSlider] = useState(50);
-  const [position, setPosition] = useState(0);
 
   const handleTouchMove = (e: React.TouchEvent) => {
     const touchX = e.touches[0].clientX;
     const xPercent = (touchX / window.innerWidth) * 100;
     const xMotion = xPercent - 50;
     setImageSlider(xPercent);
-    setPosition(xMotion);
   };
 
   return (
@@ -32,7 +30,6 @@ export default function SmallScreenHeader() {
           height={220}
           style={{
             clipPath: `inset(0 ${100 - imageSlider}% 0 0)`,
-            transform: `translateX(${position / 4}%)`,
             transition: 'transform 0.2s ease',
           }}
         />
@@ -45,7 +42,6 @@ export default function SmallScreenHeader() {
           height={220}
           style={{
             clipPath: `inset(0 0 0 ${imageSlider}%)`,
-            transform: `translateX(${position / 4}%)`,
             transition: 'transform 0.2s ease',
           }}
         />
