@@ -59,7 +59,7 @@ export const trainerEvents = [
     },
     {
       business: "Excel High School",
-      title: "HTML Developer and Content Provider - Contract Position",
+      title: "HTML Developer and Content Provider",
       date: "Jan 2022 to Dec 2022",
       logo: "/images/ExcelLogoBlack.png",
       points: [
