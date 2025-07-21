@@ -239,6 +239,7 @@ export const trainerEvents = [
     ]
 
     export const Photos = [
+      "/images/Carousel9.jpg",
       "/images/Carousel1.jpg",
       "/images/Carousel2.jpg",
       "/images/Carousel3.jpg",
