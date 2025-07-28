@@ -257,8 +257,17 @@ export const trainerEvents = [
       source: "/images/bookingApp.png",
       link: "https://fullstack-booking-app-hazel.vercel.app/login",
       description: "This is a live booking app demo built with Go on the backend and Next.js on the frontend. This will eventually have more features and be used in my personal training business.",
-      techNames: "Next.js, Typescript, Tailwind CSS, GO, PostgreSQL, Goose",
-      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png", "/assets/tech/go.png", "/assets/tech/postgresql.png", "/assets/tech/goose.png"]
+      techNames: "Next.js, Typescript, Tailwind CSS, GO, PostgreSQL, Supabase, Goose",
+      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png", "/assets/tech/go.png", "/assets/tech/postgresql.png", "/assets/tech/supabase.png", "/assets/tech/goose.png"]
+      },
+      {
+      github: "https://github.com/WarrenPaschetto/states-game",
+      name: "US States Game",
+      source: "/images/states-game.png",
+      link: "https://states-game.vercel.app/",
+      description: "A voice-controlled web game that tests your knowledge of all 50 U.S. states in a fast-paced flashcard-style challenge. You have 4 minutes to name as many states as you can — using only your voice!",
+      techNames: "Next.js, Typescript, Tailwind CSS, GO, PostgreSQL, Supabase, Goose",
+      tech: ["/assets/tech/nextJs.png", "/assets/tech/typescript.png", "/assets/tech/tailwind.png", "/assets/tech/go.png", "/assets/tech/postgresql.png", "/assets/tech/supabase.png", "/assets/tech/goose.png"]
       },
       {
       github: "https://github.com/WarrenPaschetto/website",
