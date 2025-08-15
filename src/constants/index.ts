@@ -54,8 +54,7 @@ export const trainerEvents = [
       logo: "/images/DataAnnotationLogo.png",
       points: [
         "Develop, debug, and optimize code solutions in Python, JavaScript, and TypeScript.",
-        "Conduct code reviews and identify logic errors, edge cases, and performance issues in AI-
-        generated programs.",
+        "Conduct code reviews and identify logic errors, edge cases, and performance issues in AI-generated programs.",
         "Test and validate software outputs to ensure correctness and efficiency.",
         ],
     },
@@ -413,4 +412,5 @@ export const trainerEvents = [
         },
 
     ]
+
 
