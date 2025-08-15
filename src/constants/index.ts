@@ -48,6 +48,18 @@ export const trainerEvents = [
     ];
   export const developerEvents = [
     {
+      business: "DataAnnotation Tech",
+      title: "AI Model Evaluator and Software Tester",
+      date: "Aug 2025 - Present",
+      logo: "/images/DataAnnotationLogo.png",
+      points: [
+        "Develop, debug, and optimize code solutions in Python, JavaScript, and TypeScript.",
+        "Conduct code reviews and identify logic errors, edge cases, and performance issues in AI-
+        generated programs.",
+        "Test and validate software outputs to ensure correctness and efficiency.",
+        ],
+    },
+    {
       business: "Warren Paschetto Fitness",
       title: "Web Developer and Content Creator",
       date: "Jan 2013 - Present",
@@ -401,3 +413,4 @@ export const trainerEvents = [
         },
 
     ]
+
