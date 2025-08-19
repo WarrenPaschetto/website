@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function SmallScreenHeader() {
   const { role, toggleRole } = useGlobalState();
-  const [imageSlider, setImageSlider] = useState(100);
+  const [imageSlider, setImageSlider] = useState(0);
 
   return (
     <div className="flex flex-col bg-white dark:bg-gray-900 h-[400px] justify-start items-center overflow-hidden"
@@ -72,4 +72,5 @@ export default function SmallScreenHeader() {
       </div>
     </div>
   );
+
 }
