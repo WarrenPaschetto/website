@@ -6,17 +6,10 @@ import { useState } from 'react';
 
 export default function SmallScreenHeader() {
   const { role, toggleRole } = useGlobalState();
-  const [imageSlider, setImageSlider] = useState(50);
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    const touchX = e.touches[0].clientX;
-    const xPercent = (touchX / window.innerWidth) * 100;
-    setImageSlider(xPercent);
-  };
+  const [imageSlider, setImageSlider] = useState(100);
 
   return (
     <div className="flex flex-col bg-white dark:bg-gray-900 h-[400px] justify-start items-center overflow-hidden"
-      onTouchMove={handleTouchMove}
     >
       {/* Image container */}
       <div className="relative w-[220px] h-[220px]">
@@ -29,7 +22,8 @@ export default function SmallScreenHeader() {
           height={220}
           style={{
             clipPath: `inset(0 ${100 - imageSlider}% 0 0)`,
-            transition: 'transform 0.2s ease',
+            transition: 'clip-path 700ms ease-in-out',
+            willChange: 'clip-path',
           }}
         />
         {/* Trainer Image */}
@@ -41,7 +35,8 @@ export default function SmallScreenHeader() {
           height={220}
           style={{
             clipPath: `inset(0 0 0 ${imageSlider}%)`,
-            transition: 'transform 0.2s ease',
+            transition: 'clip-path 700ms ease-in-out',
+            willChange: 'clip-path',
           }}
         />
       </div>
@@ -54,8 +49,10 @@ export default function SmallScreenHeader() {
               ? 'bg-[#FCA311] text-white dark:text-white'
               : 'bg-blue-100 text-accent dark:text-accent hover:bg-[#FCA311] dark:hover:bg-[#FCA311] dark:bg-secondary-dark'}
               `}
-          onClick={() => toggleRole('developer')}
-          style={{ opacity: `${imageSlider / 100}` }}
+          onClick={() => {
+            toggleRole('developer')
+            setImageSlider(100);
+          }}
         >
           Web Developer
         </h1>
@@ -65,8 +62,10 @@ export default function SmallScreenHeader() {
               ? 'bg-[#FCA311] text-white dark:text-white'
               : 'bg-blue-100 text-accent dark:text-accent hover:bg-[#FCA311] dark:hover:bg-[#FCA311] dark:bg-secondary-dark'}
               `}
-          onClick={() => toggleRole('trainer')}
-          style={{ opacity: `${1 - imageSlider / 100}` }}
+          onClick={() => {
+            toggleRole('trainer')
+            setImageSlider(0);
+          }}
         >
           Personal Trainer
         </h1>
